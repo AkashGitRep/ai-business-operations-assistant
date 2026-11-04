@@ -182,4 +182,4 @@ This project demonstrates practical implementation of:
 AI Engineer | Generative AI | LLM Applications | RAG | AI Agents | Python
 
 - GitHub: https://github.com/AkashGitRep
-- LinkedIn: Add your LinkedIn profile URL here
+- LinkedIn: linkedin.com/in/akash-n-268b93307
