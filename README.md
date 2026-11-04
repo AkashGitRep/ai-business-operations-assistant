@@ -1,28 +1,29 @@
 # AI Business Operations Assistant
 
-An AI-powered business operations assistant built with Python, OpenAI, LangChain, and FastAPI concepts. The project explores how Large Language Models can help businesses generate Standard Operating Procedures (SOPs), retrieve relevant knowledge, and automate operational tasks.
+An AI-powered business operations assistant built using Python, OpenAI, LangChain, and FastAPI. This project explores how Large Language Models (LLMs) can support business workflows through structured SOP generation, document retrieval, semantic search, and AI agents with tool-calling capabilities.
 
 ## Features
 
-- **AI-Powered SOP Generation:** Generate structured Standard Operating Procedures using Pydantic models and LLMs.
-- **Structured Outputs:** Convert natural-language requests into validated, structured responses.
-- **Retrieval-Augmented Generation (RAG):** Retrieve relevant information from business documents to support context-aware answers.
-- **Embeddings and Vector Search:** Generate document embeddings and retrieve semantically relevant content using ChromaDB.
-- **LangChain Integration:** Use prompt templates and model chains to structure LLM workflows.
-- **AI Agent and Tools:** Explore tool-based execution and agent workflows for business operations.
-- **Business Knowledge Base:** Use sample policy documents, including shipping and refund policies.
+- **AI-Powered SOP Generation:** Generate structured Standard Operating Procedures from natural-language requests.
+- **Structured Outputs:** Use Pydantic models to produce validated, structured LLM responses.
+- **Retrieval-Augmented Generation (RAG):** Retrieve relevant information from business documents to provide context-aware answers.
+- **Embeddings and Vector Search:** Generate document embeddings and perform semantic retrieval using ChromaDB.
+- **LangChain Integration:** Build LLM workflows using prompt templates, model chains, and integrations.
+- **AI Agents and Tools:** Implement agents that can use tools to perform business-related tasks.
+- **Business Knowledge Base:** Retrieve information from sample shipping and refund policy documents.
 
 ## Technology Stack
 
-- Python
-- OpenAI API
-- LangChain
-- LangChain Core
-- LangChain OpenAI
-- FastAPI
-- Pydantic
-- ChromaDB
-- Vector Embeddings
+| Category | Technologies |
+|---|---|
+| Programming Language | Python |
+| LLM | OpenAI API |
+| LLM Framework | LangChain |
+| API Framework | FastAPI |
+| Data Validation | Pydantic |
+| Embeddings | OpenAI Embeddings |
+| Vector Database | ChromaDB |
+| Environment Management | Python Virtual Environment, python-dotenv |
 
 ## Project Structure
 
@@ -43,6 +44,7 @@ ai-business-operations-assistant/
 ├── langchain_rag.py
 ├── langchain_tools.py
 ├── langchain_agent.py
+├── requirements.txt
 ├── .gitignore
 └── README.md
 ```
@@ -62,24 +64,24 @@ cd ai-business-operations-assistant
 python -m venv .venv
 ```
 
-Activate it:
+Activate the environment.
 
 **macOS / Linux**
+
 ```bash
 source .venv/bin/activate
 ```
 
 **Windows**
+
 ```bash
 .venv\Scripts\activate
 ```
 
 ### 3. Install dependencies
 
-Install the packages required by the project:
-
 ```bash
-pip install openai python-dotenv pydantic fastapi uvicorn chromadb langchain langchain-openai langchain-core
+pip install -r requirements.txt
 ```
 
 ### 4. Configure environment variables
@@ -94,33 +96,43 @@ Never commit your actual API key or `.env` file to GitHub.
 
 ## Running the Project
 
-Run the relevant Python module depending on the functionality you want to explore:
+Run the individual modules to explore their respective implementations:
+
+**SOP Generation and Structured Outputs**
 
 ```bash
 python main.py
 ```
 
+**LangChain RAG**
+
 ```bash
 python langchain_rag.py
 ```
+
+**LangChain Tools**
 
 ```bash
 python langchain_tools.py
 ```
 
+**LangChain AI Agent**
+
 ```bash
 python langchain_agent.py
 ```
 
-For the FastAPI application, if `app.py` exposes the FastAPI instance as `app`, run:
+**FastAPI Application**
 
 ```bash
 uvicorn app:app --reload
 ```
 
-## Learning Outcomes
+The FastAPI command assumes the application instance is named `app` inside `app.py`.
 
-This project demonstrates practical implementation and experimentation with:
+## Key Learning Outcomes
+
+This project demonstrates practical implementation of:
 
 - LLM integration using the OpenAI API
 - Prompt engineering and prompt templates
@@ -128,16 +140,18 @@ This project demonstrates practical implementation and experimentation with:
 - Text embeddings and semantic search
 - Document indexing and retrieval
 - Retrieval-Augmented Generation (RAG)
-- LangChain chains, tools, and agent workflows
+- LangChain chains and integrations
+- Tool calling and AI agent workflows
+- Vector database integration using ChromaDB
 
 ## Future Enhancements
 
-- Conversation memory
-- LangGraph-based agent workflows
+- Conversation memory and persistent context
+- LangGraph-based agent orchestration
 - Multi-agent collaboration
-- Authentication and role-based access
+- Authentication and role-based access control
 - Docker-based deployment
-- Monitoring and evaluation
+- Monitoring, evaluation, and performance optimization
 
 ## Author
 
@@ -145,8 +159,5 @@ This project demonstrates practical implementation and experimentation with:
 
 AI Engineer | Generative AI | LLM Applications | RAG | AI Agents | Python
 
-[GitHub](https://github.com/AkashGitRep) · [LinkedIn](https://www.linkedin.com/)
-
----
-
-*This is a hands-on learning and implementation project focused on applying Generative AI to real-world business operations.*
+- GitHub: https://github.com/AkashGitRep
+- LinkedIn: Add your LinkedIn profile URL here
