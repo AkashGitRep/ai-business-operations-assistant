@@ -12,6 +12,28 @@ An AI-powered business operations assistant built using Python, OpenAI, LangChai
 - **AI Agents and Tools:** Implement agents that can use tools to perform business-related tasks.
 - **Business Knowledge Base:** Retrieve information from sample shipping and refund policy documents.
 
+## System Architecture
+
+The project explores several LLM application patterns, including structured generation, retrieval-augmented generation, and tool-based AI agents.
+
+```mermaid
+flowchart TD
+    A["User Request"] --> B["Python Application"]
+    B --> C["OpenAI LLM"]
+    B --> D["Structured Output"]
+    D --> E["Pydantic Validation"]
+    B --> F["RAG Pipeline"]
+    F --> G["Document Embeddings"]
+    G --> H[("ChromaDB")]
+    H --> I["Relevant Context"]
+    I --> C
+    B --> J["AI Agent"]
+    J --> K["Tool Selection"]
+    K --> L["Business Tools"]
+    L --> M["Agent Response"]
+```
+
+
 ## Technology Stack
 
 | Category | Technologies |
