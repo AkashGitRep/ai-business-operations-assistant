@@ -2,3 +2,16 @@
 .venv/
 __pycache__/
 chroma_db/
+
+# Python compiled files
+*.pyc
+*.pyo
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE and OS files
+.vscode/
+.DS_Store
